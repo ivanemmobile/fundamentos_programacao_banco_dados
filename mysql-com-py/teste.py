@@ -16,12 +16,12 @@ mydb = mysql.connector.connect(
 #Testando a conexao, mediante a uma condição a qual se faltar algo ou nem tiver o banco especifico ira retornar um error
 #será criado uma cursor para acesso ao BD, para isso deve ser criado um objeto com esse nome mycursor = mydb.cursor.
 if mydb.is_connected():
-    ##print('Conectado com sucesso, bem vindo ao seu banco de dados!')
+    print('Conectado com sucesso, bem vindo ao seu banco de dados!')
     mycursor = mydb.cursor()
 
 # Executando uma consulta SQL, com esse objeto vamos organizar os dados nas "tabelas" que queremos ver as informaçãos e deve ser
 #ser feita para cada aplicação ou seja cada uma deve ser seu select.
-mycursor.execute("SELECT * FROM professor;")
+mycursor.execute("SELECT * FROM aluno;")
 
 # Obtendo os resultados
 myresult = mycursor.fetchall()
