@@ -1,3 +1,10 @@
+@charset "utf-8";
+
+root{
+    --main-by:#B4E1D1;
+    --main-byt:#1C2B67;
+}
+
 @media screen and (max-width: 768px) {
     * {
         margin: 0;
